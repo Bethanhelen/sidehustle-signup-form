@@ -32,39 +32,54 @@
         </div>
         <div class="form">
           <p>Let's do this!</p>
-          <form>
+          <form id="form">
             <div class="details1">
+            <div>
             <label for="first-name">FIRST NAME</label>
             <br />
             <input type="text" name="first-name" id="first-name" value="" />
-            <br />
+            </div>
+            
+            <div>
             <label for="email">EMAIL</label>
             <br />
            <input type="email" name="email" id="email" value="" />
-            <br />
+           </div>
+           
+            <div>
             <label for="password">PASSWORD</label>
             <br />
-            <input type="password" name="password" id="password" value="" />
+            <input type="password" name="password" id="password" value="" required>
+            <div id="error"></div>
+            </div>
             </div>
             
             <div class="details2">
+              <div>
               <label for="last-name">LAST NAME</label>
               <br />
               <input type="text" name="last-name" id="last-name" value="" />
-              <br />
+              </div>
+              <div>
               <label for="phone-number">PHONE NUMBER</label>
               <br />
               <input type="number" name="phone-number" id="phone-number" value="" />
-              <br />
+              </div>
+              <div>
               <label for="confirm-password">CONFIRM PASSWORD</label>
+              <br />
+              <input type="password" name="confirm-password" id="confirm-password" value="" required>
+              </div>
             </div>
           </form>
         </div>
         <div class="login">
-          <button type="submit">Create Account</button>
+          <button type="submit" value="submit">Create Account</button>
           <p>Already have an account? <a href="#">Log in</a></p>
         </div>
       </div>
   </div>
+  
+  <script src="main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
